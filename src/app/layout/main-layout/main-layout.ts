@@ -1,8 +1,12 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { LandingPage } from "../../Pages/landing-page/landing-page";
+import { Navbar } from "../navbar/navbar";
+import { Footer } from "../footer/footer";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main-layout',
-  imports: [],
+  imports: [Navbar, Footer, RouterOutlet],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',
 })

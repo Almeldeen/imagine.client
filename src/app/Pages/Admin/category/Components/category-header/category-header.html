@@ -1,0 +1,54 @@
+<!-- Category Header -->
+<div class="category-header">
+  <div class="header-content">
+    <div class="header-left">
+      <h1 class="page-title">Categories</h1>
+      <p class="page-subtitle">Manage your product categories and collections</p>
+    </div>
+    <div class="header-right">
+      <button class="btn-action">
+        <i class="fas fa-download"></i>
+        <span>Export</span>
+      </button>
+      <button class="btn-action primary" (click)="onAddCategory()">
+        <i class="fas fa-plus"></i>
+        <span>Add Category</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Search and Filters -->
+  <div class="header-filters">
+    <div class="search-box">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" class="search-input" placeholder="Search categories...">
+    </div>
+
+    <div class="filter-group">
+      <button class="filter-btn active">
+        <i class="fas fa-list"></i>
+        <span>All</span>
+        <span class="count">24</span>
+      </button>
+      <button class="filter-btn">
+        <i class="fas fa-check-circle"></i>
+        <span>Active</span>
+        <span class="count">20</span>
+      </button>
+      <button class="filter-btn">
+        <i class="fas fa-archive"></i>
+        <span>Archived</span>
+        <span class="count">4</span>
+      </button>
+    </div>
+
+    <div class="view-toggle">
+      <button class="view-btn active" title="Grid View">
+        <i class="fas fa-th"></i>
+      </button>
+      <button class="view-btn" title="List View">
+        <i class="fas fa-list"></i>
+      </button>
+    </div>
+  </div>
+</div>
