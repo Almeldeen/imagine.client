@@ -7,7 +7,7 @@
       <div class="nav-section">
         <span class="nav-section-title">Main</span>
         
-        <a href="/admin/Home" class="nav-item active">
+        <a  routerLink="/admin/Home" routerLinkActive="active" class="nav-item ">
           <i class="fas fa-home nav-icon"></i>
           <span class="nav-text">Dashboard</span>
         </a>
@@ -21,35 +21,30 @@
       <div class="nav-section">
         <span class="nav-section-title">Products</span>
         
-        <a href="/admin/products" class="nav-item">
+        <a  class="nav-item" routerLink="/admin/products" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
           <i class="fas fa-box nav-icon"></i>
           <span class="nav-text">All Products</span>
           <span class="nav-badge">248</span>
         </a>
         
-        <a href="/admin/products/add" class="nav-item">
+        <a  routerLink="/admin/products/add" routerLinkActive="active" class="nav-item">
           <i class="fas fa-plus-square nav-icon"></i>
           <span class="nav-text">Add Product</span>
         </a>
         
-        <a href="/admin/categories" class="nav-item" routerLink="/admin/categories" routerLinkActive="active">
+        <a  class="nav-item" routerLink="/admin/categories" routerLinkActive="active">
           <i class="fas fa-tags nav-icon"></i>
           <span class="nav-text">Categories</span>
-        </a>
-        
-        <a href="/admin/inventory" class="nav-item">
-          <i class="fas fa-warehouse nav-icon"></i>
-          <span class="nav-text">Inventory</span>
         </a>
       </div>
 
       <div class="nav-section">
         <span class="nav-section-title">Orders</span>
         
-        <a href="/admin/orders" class="nav-item">
+        <a class="nav-item" routerLink="/admin/orders" routerLinkActive="active">
           <i class="fas fa-shopping-cart nav-icon"></i>
           <span class="nav-text">All Orders</span>
-          <span class="nav-badge warning">12</span>
+          <span class="nav-badge warning">234</span>
         </a>
         
         <a href="/admin/orders/pending" class="nav-item">
@@ -66,14 +61,24 @@
       <div class="nav-section">
         <span class="nav-section-title">Customers</span>
         
-        <a href="/admin/customers" class="nav-item">
+        <a class="nav-item" routerLink="/admin/customers" routerLinkActive="active">
           <i class="fas fa-users nav-icon"></i>
           <span class="nav-text">All Customers</span>
+          <span class="nav-badge">1,247</span>
         </a>
         
         <a href="/admin/reviews" class="nav-item">
           <i class="fas fa-star nav-icon"></i>
           <span class="nav-text">Reviews</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <span class="nav-section-title">Inventory</span>
+        
+        <a href="/admin/inventory" class="nav-item">
+          <i class="fas fa-warehouse nav-icon"></i>
+          <span class="nav-text">Stock Management</span>
         </a>
       </div>
 

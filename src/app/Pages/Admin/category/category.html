@@ -15,12 +15,5 @@
     *ngIf="!hasCategories"
     (createCategory)="openAddCategoryForm()">
   </app-category-empty-state>
-
-  <!-- Form Modal Component -->
-  <app-category-form 
-    [isVisible]="showForm"
-    (close)="closeForm()"
-    (save)="onSaveCategory($event)">
-  </app-category-form>
 </div>
 

@@ -16,30 +16,30 @@
       <!-- Navigation Links -->
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" routerLink="/Home" routerLinkActive="active">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#products">Products</a>
+          <a class="nav-link" routerLink="/Products" routerLinkActive="active">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" routerLink="/About" routerLinkActive="active">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" routerLink="/Contact" routerLinkActive="active">Contact</a>
         </li>
       </ul>
 
       <!-- Right Side Actions -->
       <div class="d-flex align-items-center gap-3">
         <!-- Cart Icon -->
-        <a href="#cart" class="cart-icon position-relative">
+        <a class="cart-icon position-relative" routerLink="/Cart" routerLinkActive="active">
           <i class="fas fa-shopping-cart"></i>
           <span class="cart-badge">3</span>
         </a>
 
         <!-- Auth Buttons -->
-        <button class="btn btn-outline-custom btn-sm">Login</button>
-        <button class="btn btn-primary-custom btn-sm">Sign Up</button>
+        <button class="btn btn-outline-custom btn-sm" routerLink="/Login">Login</button>
+        <button class="btn btn-primary-custom btn-sm" routerLink="/Register">Sign Up</button>
       </div>
     </div>
   </div>
