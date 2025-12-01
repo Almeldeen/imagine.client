@@ -1,8 +1,8 @@
 <!-- Category Item Card -->
-<div class="category-card">
+<div class="category-card" *ngFor="let cat of categories">
   <div class="card-image">
-    <img src="/assets/images/category-placeholder.jpg" alt="Category">
-    <div class="image-overlay">
+<img [src]="cat.imageUrl" alt="{{cat.name}}" 
+     (error)="cat.imageUrl='/assets/images/category-placeholder.jpg'">    <div class="image-overlay">
       <button class="overlay-btn">
         <i class="fas fa-eye"></i>
       </button>
@@ -10,28 +10,28 @@
         <i class="fas fa-edit"></i>
       </button>
     </div>
-    <span class="status-badge active">Active</span>
+    <span class="status-badge active">{{ cat.isActive ? 'Active' : 'Inactive' }}</span>
   </div>
 
   <div class="card-content">
-    <h3 class="category-name">Hoodies</h3>
-    <p class="category-description">Premium custom hoodies with AI-powered designs</p>
-    
+    <h3 class="category-name">{{ cat.name }}</h3>
+    <p class="category-description">{{ cat.description }}</p>
+
     <div class="category-stats">
       <div class="stat-item">
         <i class="fas fa-box"></i>
-        <span>48 Products</span>
+        <span>{{ cat.productCount }} Products</span>
       </div>
       <div class="stat-item">
         <i class="fas fa-shopping-cart"></i>
-        <span>234 Sales</span>
+        <span>{{ cat.salesCount }} Sales</span>
       </div>
     </div>
 
     <div class="card-footer">
       <span class="created-date">
         <i class="fas fa-calendar"></i>
-        Created: Nov 10, 2024
+        Created: {{ cat.createdAt }}
       </span>
       <div class="card-actions">
         <button class="action-btn edit">

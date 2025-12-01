@@ -1,6 +1,6 @@
 
-export interface environment
+export const environment =
 {
-  apiUrl: 'http://localhost:3000',
+  apiUrl: 'http://localhost:5275',
   production: false
 };
